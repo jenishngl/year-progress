@@ -1,12 +1,17 @@
 {
     "theme_color": "#008b00",
     "background_color": "#000000",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Year Progress",
     "short_name": "YearProgress",
     "description": "Year Progress",
+    "serviceworker": {
+        "src": "./sw.js",
+        "scope": "/",
+        "use_cache": "false"
+    },
     "icons": [
         {
             "src": "/icons/icon-192x192.png",
