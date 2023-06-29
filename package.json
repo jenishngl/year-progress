@@ -6,7 +6,7 @@
   "scripts": {
     "init": "npm ci",
     "clean": "rimraf --glob src/sw.js && rimraf --glob src/workbox*.js && rimraf --glob src/*.map && rimraf --glob public/*",
-    "copy-static": "copyfiles -u 1 ./src/* ./public/ && copyfiles -u 1 ./src/icons/* ./public/icons/",
+    "copy-static": "copyfiles -u 1 ./src/* ./public/ && copyfiles -u 1 ./src/icons/* ./public/",
     "build-html": "html-minifier --collapse-whitespace --remove-comments --use-short-doctype --minify-css --minify-js --input-dir ./src --output-dir public --file-ext html",
     "sw-build": "workbox generateSW",
     "build": "npm run clean && npm run build-html && npm run sw-build && npm run copy-static"
