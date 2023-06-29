@@ -226,7 +226,7 @@
             from: {color: '#E3F775'},
             to: {color: '#01B576'},
             step: (state, bar) => {
-                bar.setText(currentYear + ' is ' + (bar.value() * 100).toFixed(8) + ' %');
+                bar.setText(currentYear + ' is ' + (bar.value() * 100).toFixed(8) + ' % complete');
                 bar.text.style.color = state.color;
                 bar.text.style.fontWeight = 500;
                 bar.path.setAttribute('stroke', state.color);
