@@ -1,5 +1,5 @@
 module.exports = {
-    "globDirectory": "./",
+    "globDirectory": "./src",
     "globPatterns": [
         "**/*.{html,js,css,png,svg,webp,webmanifest}"
     ],
